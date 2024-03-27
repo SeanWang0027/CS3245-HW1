@@ -1,0 +1,21 @@
+1. In the homework assignment, we are using character-based ngrams, i.e., the gram units are characters. Do you expect token-based ngram models to perform better?
+Answer:
+I do not think that token-based ngram models to perform better. I think the data presented in the train set is very short, and since using character-based ngrams method can ensure
+the model to learn more detailed information of the language, while the limit is the calculation times, the short data presented is perfect for calculating the character-based ngrams.
+I think the token-based ngram models may do better at long document when it comes to the ngram model. This is because it can capture more semantic information.
+
+2. What do you think will happen if we provided more data for each category for you to build the language models? What if we only provided more data for Indonesian?
+Answer:
+It will make the language we built more convincing and strong if we provide each category with more data.
+But if we only provide more data for Indonesian, it will be more examples been trested as Indonesian because it is more diverse and more easily to be seen as Indonesian.
+
+3. What do you think will happen if you strip out punctuations and/or numbers? What about converting upper case characters to lower case?
+Answer:
+I think it will ruin the accuracy if I strip out punctuations and/or numbers. That's because it will hurt the whole sentence's meaning.
+However, I removes '\n' in the originial dataset because it has nothing to do with the whole sentence's meaning.
+I think converting upper case characters to lower ones may still hurt the performance. This is because the upper ones sometimes mark the beginning of a sentence, which is important.
+Also upper ones may represent specific nouns. So transfering them may cause trouble to hurt the whole model's performance.
+
+4. We use 4-gram models in this homework assignment. What do you think will happen if we varied the ngram size, such as using unigrams, bigrams and trigrams?
+Answer:
+I think it may capture different level of the characteristics of the language. If we use smaller gram, it may focus more on local information and ignore the concept of whole sentence.
